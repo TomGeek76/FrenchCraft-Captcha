@@ -85,7 +85,7 @@ client.on("message", async (message) => {
     try {
         let blocked = await sql.get('select * from blocked where id="' + message.author.id + '"');
         if (blocked) message.member.kick();
-        if (message.channel.id === "510860729268699167") {
+        if (message.channel.id === "540258667715493898") {
             if (message.author.id != client.user.id) message.delete();
             else setTimeout(() => message.delete(), 60000);
             if (message.content === `${config.prefix}verif`) {
@@ -149,7 +149,7 @@ client.on('guildMemberAdd', message => {
 	  .setColor('#31a43d')
       .addField(`Bienvenue à vous`, `**Veuillez effectuer la commande** ${tool.wrap(`${config.prefix}verif`)} **afin de recevoir votre code** __**CAPTCHA**__ **et être validé.**`)
       
-	client.channels.get('510860729268699167').send({embed});
+	client.channels.get('540258667715493898').send({embed});
 
            
 });
