@@ -1,0 +1,17 @@
+{
+  "name": "discordcaptcha-master",
+  "version": "3.0.1",
+  "description": "Captcha Verification Bot based on Discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 1"
+  },
+  "author": "y21",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3",
+    "sqlite": "^2.9.2",
+    "snekfetch": "^4.0.0",
+    "jimp": "^0.3.0"
+  }
+}
